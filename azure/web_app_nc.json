@@ -55,7 +55,7 @@
                 "customDomainVerificationId": "F07573EE6B8FA96C5E1A16A1F2C6A94A7691397EF341B5237F37437BFCC93F9B",
                 "containerSize": 0,
                 "dailyMemoryTimeQuota": 0,
-                "httpsOnly": false,
+                "httpsOnly": true,
                 "redundancyMode": "None",
                 "storageAccountRequired": false,
                 "keyVaultReferenceIdentity": "SystemAssigned"
@@ -157,7 +157,7 @@
                 "http20Enabled": false,
                 "minTlsVersion": "1.2",
                 "scmMinTlsVersion": "1.2",
-                "ftpsState": "AllAllowed",
+                "ftpsState": "Disabled",
                 "preWarmedInstanceCount": 0,
                 "functionAppScaleLimit": 0,
                 "functionsRuntimeScaleMonitoringEnabled": false,

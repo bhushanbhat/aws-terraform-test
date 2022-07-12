@@ -155,7 +155,7 @@
                 "http20Enabled": false,
                 "minTlsVersion": "1.2",
                 "scmMinTlsVersion": "1.2",
-                "ftpsState": "Disabled",
+                "ftpsState": "AllAllowed",
                 "preWarmedInstanceCount": 0,
                 "functionAppScaleLimit": 0,
                 "functionsRuntimeScaleMonitoringEnabled": false,

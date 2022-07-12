@@ -1019,17 +1019,29 @@
             }
         },
         {
-            "type": "Microsoft.DBforPostgreSQL/servers/configurations",
-            "apiVersion": "2017-12-01",
-            "name": "[concat(parameters('servers_pw_postgres_server_name'), '/log_connections')]",
-            "dependsOn": [
-                "[resourceId('Microsoft.DBforPostgreSQL/servers', parameters('servers_pw_postgres_server_name'))]"
-            ],
-            "properties": {
-                "value": "off",
-                "source": "system-default"
-            }
-        },
+      "type": "Microsoft.DBforPostgreSQL/servers/configurations",
+      "apiVersion": "2017-12-01",
+      "name": "[concat(parameters('servers_pw_postgres_server_name'), '/log_checkpoints')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.DBforPostgreSQL/servers', parameters('servers_pw_postgres_server_name'))]"
+      ],
+      "properties": {
+        "value": "on",
+        "source": "system-default"
+      }
+    },
+    {
+      "type": "Microsoft.DBforPostgreSQL/servers/configurations",
+      "apiVersion": "2017-12-01",
+      "name": "[concat(parameters('servers_pw_postgres_server_name'), '/log_connections')]",
+      "dependsOn": [
+        "[resourceId('Microsoft.DBforPostgreSQL/servers', parameters('servers_pw_postgres_server_name'))]"
+      ],
+      "properties": {
+        "value": "on",
+        "source": "system-default"
+      }
+    },
         {
             "type": "Microsoft.DBforPostgreSQL/servers/configurations",
             "apiVersion": "2017-12-01",

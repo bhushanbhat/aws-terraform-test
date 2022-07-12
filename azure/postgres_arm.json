@@ -30,7 +30,7 @@
           "storageAutogrow": "Enabled"
         },
         "version": "11",
-        "sslEnforcement": "Enabled",
+        "sslEnforcement": "Disabled",
         "minimalTlsVersion": "TLSEnforcementDisabled",
         "infrastructureEncryption": "Disabled",
         "publicNetworkAccess": "Enabled"
@@ -44,7 +44,7 @@
         "[resourceId('Microsoft.DBforPostgreSQL/servers', parameters('servers_pw_postgres_server_name'))]"
       ],
       "properties": {
-        "value": "on",
+        "value": "off",
         "source": "system-default"
       }
     },
@@ -56,7 +56,7 @@
         "[resourceId('Microsoft.DBforPostgreSQL/servers', parameters('servers_pw_postgres_server_name'))]"
       ],
       "properties": {
-        "value": "on",
+        "value": "off",
         "source": "system-default"
       }
     },

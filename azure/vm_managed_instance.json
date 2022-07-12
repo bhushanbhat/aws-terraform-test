@@ -228,7 +228,7 @@
           ]
         },
         "enableAcceleratedNetworking": false,
-        "enableIPForwarding": false,
+        "enableIPForwarding": true,
         "networkSecurityGroup": {
           "id": "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroups_pw_managed_vm_nsg_name'))]"
         }

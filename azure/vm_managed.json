@@ -47,7 +47,7 @@
                 },
                 "osProfile": {
                     "computerName": "[parameters('virtualMachines_pw_managed_vm_name')]",
-                    "adminUsername": "pratik",
+                    "adminUsername": "bbtest",
                     "linuxConfiguration": {
                         "disablePasswordAuthentication": false,
                         "provisionVMAgent": true,
