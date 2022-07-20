@@ -13,8 +13,8 @@ variable "config" {
   type = "map"
 
   default = {
-    "image_publisher"        = "Canonical"
-    "image_offer"            = "UbuntuServer"
+    "image_publisher"        = "MicrosoftWindowsServer"
+    "image_offer"            = "WindowsServer"
     "nic_name"               = "myVMNic"
     "address_prefix"         = "10.0.0.0/16"
     "subnet_name"            = "Subnet"
