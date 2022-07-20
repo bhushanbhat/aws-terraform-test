@@ -1,28 +1,46 @@
 variable "resource_group_name" {
-  description = "Name of the resource group container for all resources"
+  type = string
 }
 
+
 variable "resource_group_location" {
-  description = "Azure region used for resource deployment"
+  type = string
 }
 
 variable "admin_username" {
-  description = "User name for the Virtual Machine"
+  type = string
 }
 
 variable "admin_password" {
-  description = "Password for the Virtual Machine."
+  type = string
 }
 
 variable "dns_label_prefix" {
-  description = "Unique DNS Name for the Public IP used to access the Virtual Machine."
+  type = string
 }
 
 variable "ubuntu_os_version" {
-  description = "The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version."
+  type = string
 }
 
 variable "admin_sshkey" {
-  type        = "string"
-  description = "SSH key for authentication to the Virtual Machines"
+  type = string
+}
+variable "key_vault_id" {
+  type = string
+}
+
+variable key_vault_uri {
+  description = "Name of the keyVault"
+  default     = "testkeyVault123"
+}
+
+variable key_vault_key {
+  description = "keyVault key id"
+  default     = "testkeyVault123"
+}
+
+variable key_vault_key_url {
+  description = "Name of the keyVault"
+  default     = "testkeyVault123"
 }
