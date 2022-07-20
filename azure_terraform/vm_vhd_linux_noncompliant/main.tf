@@ -10,7 +10,7 @@ resource "random_id" "storage_account_name" {
 
 #"The Ubuntu version for the VM. This will pick a fully patched image of this given Ubuntu version."
 variable "ubuntu_os_version_map" {
-  type = "map"
+  type = map
 
   default = {
     "12.04.5-LTS" = "12.04.5-LTS"
@@ -21,7 +21,7 @@ variable "ubuntu_os_version_map" {
 }
 
 variable "config" {
-  type = "map"
+  type = map
 
   default = {
     "image_publisher"        = "Canonical"

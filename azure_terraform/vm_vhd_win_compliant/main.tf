@@ -9,7 +9,7 @@ resource "random_id" "storage_account_name" {
 }
 
 variable "config" {
-  type = "map"
+  type = map
 
   default = {
     "image_publisher"        = "MicrosoftWindowsServer"
